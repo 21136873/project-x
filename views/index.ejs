@@ -1,14 +1,15 @@
 <html>
 	<head>
-		<link rel="stylesheet" href="/bundle.css" type="text/css">
+		<link rel="stylesheet" href="<%= assets.css %>" type="text/css">
 		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script src="<%= assets.js %>" async></script>
 	</head>
 	<body>
 		<header class=" top-bar mdc-top-app-bar">
 			<div class="mdc-top-app-bar__row">
 				<section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
 					<a href="#" class="material-icons mdc-top-app-bar__navigation-icon">menu</a>
-					<span class="mdc-top-app-bar__title">Title</span>
+					<span class="mdc-top-app-bar__title"><%= title %></span>
 				</section>
 			</div>
 		</header>

@@ -1,16 +1,22 @@
 @import "@material/button/mdc-button";
 @import "@material/top-app-bar/mdc-top-app-bar";
 
+.foo-button {
+  @include mdc-button-ink-color(black);
+  @include mdc-states(black);
+  margin-top: 100
+}
+
+.top-bar {
+	@include mdc-top-app-bar-fill-color(black);
+}
+
 body {
 	margin: 0
 }
 
-.top-bar {
-	@include mdc-top-app-bar-fill-color(teal);
+
+h1 {
+  background-color: green 
 }
 
-.foo-button {
-	margin-top: 100px;
-	@include mdc-button-ink-color(teal);
-	@include mdc-states(teal);
-}
